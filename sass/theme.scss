@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 body{
 	font-family: $body-font-family;
@@ -8,4 +9,17 @@ h1,
 h2,
 h3{
 	color: $primary-color;
+}
+
+.button{
+	@include rounded(0.25em);
+	display: inline-block;
+	padding: $button-padding;
+	background-color: $button-background-color;
+	color: $button-text-color;
+	text-shadow: 0 -1px 0 darken($button-background-color, 20%);
+	border-width: $button-border-width;
+	border-color: $button-border-color; 
+	border-style: $button-border-style;
+	text-decoration: none;
 }

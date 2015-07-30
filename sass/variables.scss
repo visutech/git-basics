@@ -3,3 +3,14 @@
 $primary-color: #f90;
 $body-text-color: #666;
 $body-font-family: arial, helvetica, sans-serif;
+
+$button-background-color: $primary-color;
+$button-text-color: #fff;
+$button-border-width: 1px;
+$button-border-style: solid;
+$button-border-color: darken($button-background-color, 10%);
+$button-padding-top: 0.5em;
+$button-padding-right: 1em;
+$button-padding-bottom: 0.5em;
+$button-padding-left: 1em;
+$button-padding: $button-padding-top $button-padding-right $button-padding-bottom $button-padding-left ;
